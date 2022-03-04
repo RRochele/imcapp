@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IMC-app</string>
+    <string name="OlaCheckBox">ola checkbox</string>
+    <string name="calcule_imc">Calcule IMC</string>
+    <string name="calcular">calcular</string>
+    <string name="peso_hint">peso_hint</string>
+    <string name="hint_altura">hint_altura</string>
+    <string name="imc">imc</string>
+    <string name="IMC">IMC</string>
+</resources>

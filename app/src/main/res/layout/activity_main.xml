@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <EditText
+        android:id="@+id/pesoEDT"
+        style="@style/imput_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginEnd="136dp"
+        android:text="Peso (ex 68 Kg)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.377" />
+
+    <EditText
+        android:id="@+id/alturaEDT"
+        style="@style/imput_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginEnd="156dp"
+        android:text="Altura(ex: 1.79m)"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/calcularBTM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTXT"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <Button
+        android:id="@+id/calcularBTM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Calcular"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/titleTXT"
+        style="@style/title_purple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="48dp"
+        android:text="IMC"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.wiget.Guideline
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_percent="0.80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
